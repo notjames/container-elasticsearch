@@ -5,8 +5,8 @@ def github_org         = "samsung-cnct"
 def publish_branch     = "master"
 def registry           = "quay.io"
 def registry_user      = "samsung_cnct"
-def robot_secret       = "quay-robot-zabra-container-rw"
-def image_name         = "zabra-container"
+def robot_secret       = "quay-robot-elasticsearch-container-rw"
+def image_name         = "elasticsearch-container"
 def image_tag          = "${env.RELEASE_VERSION}" != "null" ? "${env.RELEASE_VERSION}" : "latest"
 
 podTemplate(label: "${image_name}", containers: [
