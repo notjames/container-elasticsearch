@@ -19,8 +19,6 @@ RUN bin/elasticsearch-plugin install io.fabric8:elasticsearch-cloud-kubernetes:5
 
 ADD elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml
 
-#RUN echo "MAX_LOCKED_MEMORY=unlimited" >> /etc/default/elasticsearch
-
 ADD limits.conf /etc/security/limits.conf
 
 COPY custom-entrypoint.sh /custom-entrypoint.sh
