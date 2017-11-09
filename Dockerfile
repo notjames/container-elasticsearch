@@ -18,3 +18,9 @@ ENV NETWORK_HOST=_site_
 RUN bin/elasticsearch-plugin install io.fabric8:elasticsearch-cloud-kubernetes:5.5.2
 
 ADD elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml
+
+ADD limits.conf /etc/security/limits.conf
+
+COPY custom-entrypoint.sh /custom-entrypoint.sh
+
+ENTRYPOINT ["/custom-entrypoint.sh"]

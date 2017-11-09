@@ -23,3 +23,5 @@ discovery.zen.minimum_master_nodes: 2
 path:
   data: /usr/share/elasticsearch/data
   logs: /usr/share/elasticsearch/logs
+
+bootstrap.memory_lock: true
