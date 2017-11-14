@@ -23,4 +23,6 @@ ADD limits.conf /etc/security/limits.conf
 
 COPY custom-entrypoint.sh /custom-entrypoint.sh
 
+VOLUME ["/usr/share/elasticsearch"]
+
 ENTRYPOINT ["/custom-entrypoint.sh"]
