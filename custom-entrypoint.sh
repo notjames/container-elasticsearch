@@ -10,4 +10,5 @@ ulimit -l unlimited
 echo '2. After ulimit'
 ulimit -l
 
+chown -R elasticsearch:elasticsearch /usr/share/elasticsearch/data
 exec gosu elasticsearch /usr/share/elasticsearch/bin/elasticsearch
