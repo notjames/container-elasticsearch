@@ -25,3 +25,5 @@ path:
   logs: /usr/share/elasticsearch/logs
 
 bootstrap.memory_lock: true
+
+xpack.security.enabled: false
