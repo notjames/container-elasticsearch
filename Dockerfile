@@ -11,6 +11,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+# Base image: https://github.com/pires/docker-jre
 FROM quay.io/pires/docker-jre:8u131_r2
 
 # Export HTTP & Transport
