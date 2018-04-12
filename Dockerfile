@@ -13,12 +13,14 @@
 # limitations under the License.
 
 # Base image: https://github.com/pires/docker-jre
-FROM quay.io/pires/docker-jre:8u131_r2
+FROM quay.io/pires/docker-jre:8u151
+LABEL MAINTAINER="Jim Conner <snafu.x@gmail.com>"
+LABEL DESCRIPTION="Elasticsearch container for Samsung SDS"
 
 # Export HTTP & Transport
 EXPOSE 9200 9300
 
-ENV ES_VERSION 5.2.2_1
+ENV ES_VERSION 5.6.3
 
 # Install Elasticsearch.
 RUN apk add --no-cache --update elasticsearch>$ES_VERSION bash ca-certificates su-exec util-linux curl
